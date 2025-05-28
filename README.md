@@ -87,7 +87,7 @@ npm -v
 ## 📦 Install Synqchronizer CLI
 
 ```bash
-npm install -g synqchronizer
+npm install -g synchronizer-cli
 ```
 
 ---
