@@ -2,7 +2,7 @@
 
 # Install NVM (Node Version Manager)
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+![Copy me] curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 Setelah selesai, jalankan:
 
@@ -23,6 +23,7 @@ npm install -g synqchronizer
 
 # Jalankan Synqchronizer
 synqchronizer init
+
 Masukkan nama node anda , multisynq key anda dan alamat wallet anda
 
 # Jalankan node
