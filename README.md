@@ -1,5 +1,6 @@
-📘 Multisynq Node Setup Guide
-🚀 A quick guide to install and run your own Multisynq Synchronizer Node.
+# Multisynq Node Setup Guide
+
+
 
 🟦 Install NVM (Node Version Manager)
 <pre> <code id="code1">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash</code> <button onclick="copy('code1')">📋 Copy</button> </pre>
