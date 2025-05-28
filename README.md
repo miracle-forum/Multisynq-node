@@ -2,7 +2,7 @@
 
 # Install NVM (Node Version Manager)
 
-![Copy me] curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+![Copy me](https://img.shields.io/badge/copy-this--command-blue) curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 Setelah selesai, jalankan:
 
