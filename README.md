@@ -15,6 +15,7 @@ nvm use --lts
 Pastikan Node dan NPM sudah terpasang:
 
 node -v
+
 npm -v
 
 # Install Synqchronizer
@@ -27,6 +28,7 @@ Masukkan nama node anda , multisynq key anda dan alamat wallet anda
 # Jalankan node
 synqchronizer start
 
+full details : https://www.npmjs.com/package/synqchronizer
 
 
 
