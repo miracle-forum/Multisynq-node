@@ -95,7 +95,8 @@ npm install -g synqchronizer
 ## ⚙️ Initialize the Synqchronizer
 
 ```bash
-synqchronize init
+synchronize init
+
 ```
 
 Fill in your node name, Multisynq key, and wallet address when prompted.
@@ -105,7 +106,8 @@ Fill in your node name, Multisynq key, and wallet address when prompted.
 ## ▶️ Start the Synchronizer Node
 
 ```bash
-synqchronize start
+synchronize start
+
 ```
 
 ---
@@ -127,7 +129,7 @@ This command will generate the systemd service file, install it, and start the s
 ## 🌐 Access Web Dashboard (optional)
 
 ```bash
-synqchronize web
+synchronize web
 ```
 
 Then open in browser: `http://<YOUR_VPS_IP>:3000`
@@ -137,8 +139,9 @@ Then open in browser: `http://<YOUR_VPS_IP>:3000`
 ## 📊 Monitor Status & Points
 
 ```bash
-synqchronize status
-synqchronize points
+synchronize status
+synchronize points
+
 ```
 
 ---
@@ -148,6 +151,7 @@ synqchronize points
 You can find the full documentation at:  
 [https://www.npmjs.com/package/synqchronizer](https://www.npmjs.com/package/synqchronizer)
 
+https://github.com/multisynq/synchronizer-cli
 
 
 
