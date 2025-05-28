@@ -115,11 +115,13 @@ synchronize start
 ## 🛠️ Create a Systemd Service for Synqchronizer (One-liner)
 
 ```bash
-sudo mv /etc/systemd/system/synchronizer-cli.service /etc/systemd/system/synqchronizer-cli.service
+  Start service:    sudo systemctl start synchronizer-cli
+  Stop service:     sudo systemctl stop synchronizer-cli
+  Restart service:  sudo systemctl restart synchronizer-cli
+  Enable auto-start: sudo systemctl enable synchronizer-cli
+  View live logs:   journalctl -u synchronizer-cli -f
+  View all logs:    journalctl -u synchronizer-cli
 
-sudo systemctl daemon-reload
-sudo systemctl enable synqchronizer-cli
-sudo systemctl start synqchronizer-cli
 ```
 
 This command will generate the systemd service file, install it, and start the synchronizer automatically.
