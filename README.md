@@ -19,6 +19,13 @@ Once installed, run the following:
 
 ▶️ Start the Synchronizer Node
 <pre> <code id="code7">synqchronizer start</code> <button onclick="copy('code7')"></button> </pre>
+
+🛠️ Synchronizer Systemd Service
+Generate and install the Synchronizer system service for auto-start on reboot:
+
+<pre> <code id="code8">synqchronizer service sudo cp ~/.synqchronizer/synqchronizer.service /etc/systemd/system/ sudo systemctl daemon-reload sudo systemctl enable synqchronizer sudo systemctl start synqchronizer</code> <button onclick="copy('code8')">📋 Copy</button> </pre>
+
+
 📖 Full Documentation
 https://www.npmjs.com/package/synqchronizer
 
