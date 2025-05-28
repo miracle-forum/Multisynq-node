@@ -3,10 +3,10 @@
 
 
 🟦 Install NVM (Node Version Manager)
-<pre> <code id="code1">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash</code> <button onclick="copy('code1')">📋 Copy</button> </pre>
+<pre> <code id="code1">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash</code> <button onclick="copy('code1')"></button> </pre>
 Once installed, run the following:
 
-<pre> <code id="code2">export NVM_DIR="$HOME/.nvm" && . "$NVM_DIR/nvm.sh"</code> <button onclick="copy('code2')">📋 Copy</button> </pre>
+<pre> <code id="code2">export NVM_DIR="$HOME/.nvm" && . "$NVM_DIR/nvm.sh"</code> <button onclick="copy('code2')"></button> </pre>
 🟩 Install Node.js LTS
 <pre> <code id="code3">nvm install --lts # or: nvm install 20 nvm use --lts</code> <button onclick="copy('code3')">📋 Copy</button> </pre>
 ✅ Check Node and NPM
