@@ -20,10 +20,11 @@ Once installed, run the following:
 ▶️ Start the Synchronizer Node
 <pre> <code id="code7">synqchronizer start</code> <button onclick="copy('code7')"></button> </pre>
 
-🛠️ Synchronizer Systemd Service
-Generate and install the Synchronizer system service for auto-start on reboot:
+🛠️ Synchronizer Systemd Service (One-Liner)
+Run the following command to generate and start the systemd service in one go:
 
-<pre> <code id="code8">synqchronizer service sudo cp ~/.synqchronizer/synqchronizer.service /etc/systemd/system/ sudo systemctl daemon-reload sudo systemctl enable synqchronizer sudo systemctl start synqchronizer</code> <button onclick="copy('code8')"></button> </pre>
+<pre> <code id="code9">synqchronizer service && sudo cp ~/.synqchronizer/synqchronizer.service /etc/systemd/system/ && sudo systemctl daemon-reload && sudo systemctl enable synqchronizer && sudo systemctl start synqchronizer</code> <button onclick="copy('code9')"></button> </pre>
+💡 This command generates the systemd service file, copies it to the proper directory, reloads systemd, enables the service at boot, and starts it immediately.
 
 
 📖 Full Documentation
