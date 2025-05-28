@@ -23,7 +23,7 @@ Once installed, run the following:
 🛠️ Synchronizer Systemd Service
 Generate and install the Synchronizer system service for auto-start on reboot:
 
-<pre> <code id="code8">synqchronizer service sudo cp ~/.synqchronizer/synqchronizer.service /etc/systemd/system/ sudo systemctl daemon-reload sudo systemctl enable synqchronizer sudo systemctl start synqchronizer</code> <button onclick="copy('code8')">📋 Copy</button> </pre>
+<pre> <code id="code8">synqchronizer service sudo cp ~/.synqchronizer/synqchronizer.service /etc/systemd/system/ sudo systemctl daemon-reload sudo systemctl enable synqchronizer sudo systemctl start synqchronizer</code> <button onclick="copy('code8')"></button> </pre>
 
 
 📖 Full Documentation
