@@ -22,19 +22,7 @@ Once installed, run the following:
 📖 Full Documentation
 https://www.npmjs.com/package/synqchronizer
 
-📜 Copy Script Support (HTML)
-Make sure to include the following JavaScript at the bottom of your HTML/README if using GitHub Pages:
 
-html
-Copy
-Edit
-<script>
-  function copy(id) {
-    const text = document.getElementById(id).innerText;
-    navigator.clipboard.writeText(text);
-    alert("Copied to clipboard!");
-  }
-</script>
 
 
 
