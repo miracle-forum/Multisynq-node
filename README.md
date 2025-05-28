@@ -10,7 +10,7 @@ Once installed, run the following:
 🟩 Install Node.js LTS
 <pre> <code id="code3">nvm install --lts # or: nvm install 20 nvm use --lts</code> <button onclick="copy('code3')"></button> </pre>
 ✅ Check Node and NPM
-<pre> <code id="code4">node -v npm -v</code> <button onclick="copy('code4')">📋 Copy</button> </pre>
+<pre> <code id="code4">node -v npm -v</code> <button onclick="copy('code4')"></button> </pre>
 📦 Install Synqchronizer CLI
 <pre> <code id="code5">npm install -g synqchronizer</code> <button onclick="copy('code5')"></button> </pre>
 ⚙️ Initialize the Synqchronizer
