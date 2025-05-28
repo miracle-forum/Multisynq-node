@@ -1,18 +1,21 @@
-# Multisynq Node Setup Guide
+# 🛰️ Multisynq Node Setup Guide
 
-# Docker Installation Tutorial on Ubuntu
-
-A quick step-by-step guide to install Docker and Docker Compose Plugin on Ubuntu to get you started with containers.
+This guide walks you through setting up a Multisynq Synchronizer node using Docker, Node.js, and the `synqchronizer` CLI tool on an Ubuntu server.
 
 ---
 
-## Step 1: Update and Install Dependencies
+## 🐳 Docker Installation on Ubuntu
+
+A quick step-by-step guide to install Docker and Docker Compose Plugin.
+
+### Step 1: Update and Install Dependencies
 
 ```bash
 sudo apt-get update -y
 sudo apt-get install -y ca-certificates curl gnupg lsb-release
 
-Add Docker's Official GPG Key and Repository
+### Step 2: Add Docker's Official GPG Key and Repository
+
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
@@ -22,61 +25,74 @@ echo \
   https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-Install Docker and Docker Compose Plugin
+### Step 3: Install Docker and Docker Compose Plugin
 
 sudo apt-get update -y
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-Verify Docker Installation
+### Step 4: Verify Docker Installation
 
 sudo docker run hello-world
 
+If you see a "Hello from Docker!" message, you're good to go!
 
 
-🟦 Install NVM (Node Version Manager)
-<pre> <code id="code1">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash</code> <button onclick="copy('code1')"></button> </pre>
-Once installed, run the following:
 
-<pre> <code id="code2">export NVM_DIR="$HOME/.nvm" && . "$NVM_DIR/nvm.sh"</code> <button onclick="copy('code2')"></button> </pre>
-🟩 Install Node.js LTS
-<pre> <code id="code3">nvm install --lts # or: nvm install 20 nvm use --lts</code> <button onclick="copy('code3')"></button> </pre>
-✅ Check Node and NPM
-<pre> <code id="code4">node -v npm -v</code> <button onclick="copy('code4')"></button> </pre>
-📦 Install Synqchronizer CLI
-<pre> <code id="code5">npm install -g synqchronizer</code> <button onclick="copy('code5')"></button> </pre>
-⚙️ Initialize the Synqchronizer
-<pre> <code id="code6">synqchronize init</code> <button onclick="copy('code6')"></button> </pre>
+### 🟦 Install NVM (Node Version Manager)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+Then activate NVM:
+export NVM_DIR="$HOME/.nvm" && . "$NVM_DIR/nvm.sh"
+
+### 🟩 Install Node.js (LTS Version)
+
+nvm install --lts
+nvm use --lts
+
+### ✅ Verify Node and NPM Installation
+node -v
+npm -v
+
+### 📦 Install Synqchronizer CLI
+npm install -g synqchronizer
+
+### ⚙️ Initialize the Synchronizer
+
+synqchronize init
+
 📝 Enter your node name, Multisynq key, and wallet address when prompted.
 
-▶️ Start the Synchronizer Node
-<pre> <code id="code7">synqchronize start</code> <button onclick="copy('code7')"></button> </pre>
 
-🛠️ Synchronizer Systemd Service (One-Liner)
-Run the following command to generate and start the systemd service in one go:
+### ▶️ Start the Synchronizer Node
+synqchronize start
 
-<pre> <code id="code9">synqchronize service && sudo cp ~/.synqchronize/synqchronize.service /etc/systemd/system/ && sudo systemctl daemon-reload && sudo systemctl enable synqchronize && sudo systemctl start synqchronize</code> <button onclick="copy('code9')"></button> </pre>
-💡 This command generates the systemd service file, copies it to the proper directory, reloads systemd, enables the service at boot, and starts it immediately.
+### 🛠️ Set Up as Systemd Service (One-Liner)
+Run the following command to generate, install, and start the systemd service automatically:
 
-# Access Web Dashboard ( optional )
+synqchronize service && \
+sudo cp ~/.synqchronize/synqchronize.service /etc/systemd/system/ && \
+sudo systemctl daemon-reload && \
+sudo systemctl enable synqchronize && \
+sudo systemctl start synqchronize
 
-synchronize web
+### 🌐 Access Web Dashboard (Optional)
 
-dashboard access : http://<YOUR_VPS_IP>:3000
+synqchronize web
 
-# Monitoring status & points
+Access it at: http://<YOUR_VPS_IP>:3000
 
-synchronize status
-synchronize points
+### 📊 Monitor Status & Points
+Check current status:
+synqchronize status
 
-
-
-
-
-
+Check earned points:
+synqchronize points
 
 
-📖 Full Documentation
-https://www.npmjs.com/package/synqchronizer
+### 📖 Full Documentation
+You can find more information here:
+
+🔗 https://www.npmjs.com/package/synqchronizer
 
 
 
