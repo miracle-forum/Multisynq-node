@@ -1,1 +1,32 @@
 # Multisynq-node
+
+# Install NVM (Node Version Manager)
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+Setelah selesai, jalankan:
+
+export NVM_DIR="$HOME/.nvm" && . "$NVM_DIR/nvm.sh"
+
+# Install Node.js LTS
+nvm install --lts     # atau bisa juga: nvm install 20
+nvm use --lts
+
+Pastikan Node dan NPM sudah terpasang:
+
+node -v
+npm -v
+
+# Install Synqchronizer
+npm install -g synqchronizer
+
+# Jalankan Synqchronizer
+synqchronizer init
+Masukkan nama node anda , multisynq key anda dan alamat wallet anda
+
+# Jalankan node
+synqchronizer start
+
+
+
+
