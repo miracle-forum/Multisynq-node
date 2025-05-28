@@ -128,7 +128,7 @@ This command will generate the systemd service file, install it, and start the s
 
 ---
 
-## 🌐 Access Web Dashboard (optional)
+## 🌐 Access Web Dashboard 
 
 ```bash
 synchronize web
